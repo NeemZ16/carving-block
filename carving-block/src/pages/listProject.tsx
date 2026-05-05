@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Page from "./pageTemplate";
-import { storeProjectDetails, uploadImage } from "../utils/db";
+import { storeProjectDetails } from "../utils/db";
 import { useCarvingBlock } from "../hooks/walletContext";
 import type { ProjectListingProps } from "../components/projListing";
 

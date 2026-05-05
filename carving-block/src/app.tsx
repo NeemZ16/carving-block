@@ -1,5 +1,6 @@
 // import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router';
+// import { BrowserRouter, Routes, Route } from 'react-router';
+import { HashRouter, Routes, Route } from 'react-router';
 import './app.css';
 import Home from './pages/home';
 import ViewManageBooking from './pages/viewManageBooking';
@@ -17,14 +18,15 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      {/* <HashRouter basename='/carving-block'> */}
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/view-proj/:projectID" element={<ViewManageBooking />} />
           <Route path="/list-proj" element={<ListProject />}/>
           <Route path="/completed" element={<CompletedProjects />}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }

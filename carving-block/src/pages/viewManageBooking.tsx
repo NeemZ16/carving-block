@@ -8,7 +8,7 @@ import type { ProjectListingProps } from "../components/projListing";
 import Page from "./pageTemplate";
 // import Button from "../components/interaction/button";
 import ProjectDetailsMain from "../components/projDetailsMain";
-import { getProjectDetails, setBookingTime } from "../utils/db";
+import { getProjectDetails } from "../utils/db";
 // import { useCarvingBlock } from "../hooks/walletContext";
 // import { dateInputToDB } from "../utils/convdatetime";
 // import { dateInputToDB, dateDBToRender } from "../utils/convdatetime";
