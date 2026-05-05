@@ -20,7 +20,7 @@ export default function Home() {
                 return getProjectsByIDList(ids);
             })
             .then((projects: ProjectListingProps[]) => {
-                const available = projects.filter((p) => p.state === 0);
+                const available = projects.filter((p) => p.state !== 4);
                 setListings(available);
             })
             .catch((err: any) => {

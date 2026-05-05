@@ -1,7 +1,7 @@
 // holds project info and goes into manage booking page
 import type { ProjectListingProps } from "../components/projListing";
 import { formatDuration } from "./projDetailsTile";
-import { dateDBToRender } from "../utils/convdatetime";
+// import { dateDBToRender } from "../utils/convdatetime";
 import './proj.css';
 import SessionActions from "./manageProjBtns";
 
@@ -27,12 +27,12 @@ export default function ProjectDetailsMain({ pdetails, setProject }: ProjectDeta
                         <span className="title info">Session Duration:</span>
                         <span className="info" style={{ minWidth: "fit-content" }}>{formatDuration(pdetails.duration)}</span>
                     </div>
-                    {pdetails.booked && pdetails.time && (
+                    {/* {pdetails.booked && pdetails.time && (
                         <div className="sb">
                             <span className="title info">Date & Time:</span>
                             <span className="info">{dateDBToRender(pdetails.time)}</span>
                         </div>
-                    )}
+                    )} */}
                     {pdetails.description && (<p className="info"><span className="title">Description: </span>{pdetails.description}</p>)}
                 </div>
                 {/* <SessionActions state={pdetails.state} scheduling={scheduling} setScheduling={setScheduling}/> */}
