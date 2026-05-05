@@ -1,0 +1,36 @@
+button {
+  font-family: var(--font-b);
+  padding: var(--xs);
+  font-weight: 600;
+  background-color: var(--primary);
+  color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+  cursor: pointer;
+}
+
+button.red {
+  background-color: var(--red-light);
+  color: var(--red-dark);
+  border-color: var(--red-dark);
+}
+
+button.yellow {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+button.green {
+  background-color: var(--green-light);
+  color: var(--green-dark);
+  border-color: var(--green-dark);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  filter: brightness(0.5)
+}
+
+button:not(:disabled):active {
+  filter: brightness(0.85);
+}

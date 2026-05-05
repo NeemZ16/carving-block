@@ -1,0 +1,80 @@
+#header {
+  background-color: var(--primary);
+  padding: 1.25rem var(--l);
+  width: 100vw;
+  text-align: center;
+  margin-bottom: var(--m);
+  display: flex;
+}
+
+#header>div {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--xs);
+  align-items: center;
+}
+
+#header>a {
+  flex: 0;
+}
+
+#header a {
+  color: var(--primary-dark);
+}
+
+#content {
+  padding: 0 var(--l);
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - var(--l)*3);
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: var(--m);
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s);
+}
+
+hr {
+  margin: var(--m) 0;
+}
+
+hr.vert {
+  margin: 0 var(--l);
+  border-color: var(--primary-light);
+}
+
+.dashed {
+  border: 1px solid var(--gray);
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s);
+  max-height: calc(100vh - var(--l)*3);
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s);
+}
+
+.completed-container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
