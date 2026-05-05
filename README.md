@@ -1,5 +1,7 @@
 # The Carving `Block`
 
+- **Deployed Contract:** `0x7501B1B0F69623C102f0D4F9eF1AfcD175DE8d04`
+
 ## Local Deployment Instructions
 Ensure you have npm and node installed. Clone the repository and make sure all dependencies are installed for both the frontend and hardhat:
 ```
