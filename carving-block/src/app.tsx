@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/carving-block'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/view-proj/:projectID" element={<ViewManageBooking />} />
