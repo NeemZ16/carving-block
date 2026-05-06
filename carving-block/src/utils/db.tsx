@@ -18,8 +18,9 @@ import {
 
 // -------------------- CONFIG --------------------
 
-// const PROJECTS_COLLECTION = "projects";
-const PROJECTS_COLLECTION = "projects-prod";
+const PROJECTS_COLLECTION = "projects";
+// const PROJECTS_COLLECTION = "projects-prod";
+// const PROJECTS_COLLECTION = "projects-debug";
 
 const firebaseConfig = {
     apiKey: "AIzaSyD9gbNyub0mO-YBr4gc-EVQOI4NSoY0j-o",

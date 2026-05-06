@@ -53,6 +53,8 @@ contract CarvingBlock {
     event ProjectCanceled(uint id);
     event ProjectStarted(uint id);
     event ProjectCompleted(uint id, bool fullyCompleted);
+    event DebugPhase(ProjectPhase phase);
+    event DebugBuyer(address buyer);
 
 
     // MODIFIERS - DONE
@@ -141,6 +143,8 @@ contract CarvingBlock {
     }
     
     function cancel(uint id) external canCancel(id) {
+        emit DebugPhase(allProjects[id].phase);
+        emit DebugBuyer(allProjects[id].buyer);
         // if project started, send back the money
         if (allProjects[id].phase == ProjectPhase.Started) {
             yoda.transfer(allProjects[id].buyer, allProjects[id].price*10**2);
