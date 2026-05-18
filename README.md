@@ -1,6 +1,9 @@
-# The Carving `Block`
+# DApp - The Carving `Block`
 
-**Deployed Contract:** `0xeFA9e9468D8339a63d6f73b5850DBBE8da56B47B`
+**Deployed Contract:** `0xeFA9e9468D8339a63d6f73b5850DBBE8da56B47B`  
+**Deployed Frontend:** https://neemz16.github.io/carving-block/
+
+The Carving `Block` is a decentralized marketplace dApp where a single seller can list woodcarving projects for sale for some amount of Yoda tokens. The project is running on the Sepolia testnet.
 
 ## Local Deployment Instructions
 Ensure you have npm and node installed. Clone the repository and make sure all dependencies are installed for both the frontend and hardhat:
